@@ -157,3 +157,28 @@ footer .cont-left, .cont-center, .cont-right{
     font-size: 1rem;
     color: var(--pAlter2);
 }
+
+
+/* media Querys */ 
+@media screen and (max-width: 768px) {
+    
+    header .container-right{
+        visibility: hidden;
+    }
+
+    .Hero .title {
+        font-size: 3rem;
+    }
+
+    footer p{
+        font-size: 0.8rem;
+        text-align: center;
+        margin: 0 1rem 0;
+    }
+}
+
+@media screen and (max-width: 508px) {
+    .Hero .title {
+        font-size: 2.5rem;
+    }
+}
