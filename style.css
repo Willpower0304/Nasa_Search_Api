@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --bg: #dadada;
+    --p: #fff;
+    --pAlter: #a3a3a3;
+    --pAlter2: #636363;
+    --transparent: #ffffff18;
+    --transparentHover: #ffffff23;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-image: url(img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+header {
+    margin: 1rem 3rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.container-left img {
+    max-height: 80px; /
+}
+
+.container-right {
+    display: flex;
+    align-items: center; 
+}
+
+.container-right ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 100px; 
+}
+
+.container-right ul li {
+    font-size: 1.2rem;
+}
+
+.container-right ul li a {
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: var(--p);
+    transition: .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.container-right ul li a:hover {
+    color: #000000;
+    box-shadow: inset 200px 0 0 0 #ffffff;;
+}
+
+
+
+.Hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    flex: 1;
+    margin: 8rem 3rem 0;
+}
+
+.Hero .title {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--p);
+}
+
+.Hero .input-container {
+    display: flex;
+    justify-content: center;
+}
+
+.Hero .input-container {
+    position: relative;
+    width: 100%;
+    max-width: 20rem;
+}
+
+.Hero .input-container input {
+    width: 100%;
+    height: 3rem;
+    border-radius: 30px;
+    border-style: none;
+    padding: 0 3rem 0 1rem;
+    box-sizing: border-box;
+    font-size: 0.8rem;
+    background-color: var(--transparent);
+    color: var(--pAlter);
+    transition: all 0.3s ease;
+}
+
+.Hero .input-container input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    background-color: var(--transparentHover);
+}
+
+.Hero .input-container .lupa {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: var(--pAlter);
+}
+
+.Hero .input-container .lupa:hover {
+    cursor: pointer;
+}
+
+.Hero p {
+    margin-top: 1rem;
+    display: flex;
+    color: var(--pAlter);
+    text-align: center;
+    max-width: 70ch;
+}
+
+
+
+footer {
+    margin: 1rem 3rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .cont-left, .cont-center, .cont-right{
+    font-size: 1rem;
+    color: var(--pAlter2);
+}
