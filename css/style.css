@@ -29,11 +29,11 @@ html, body {
 
 body {
     font-family: "Roboto", sans-serif;
-    background-image: url(img/bg.jpg);
-    background-position: center;
+    overflow: hidden;
+    background-image: url("../img/bg.jpg");
+    background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
 }
 
 header {
